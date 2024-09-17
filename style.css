@@ -11,9 +11,12 @@
     --gray-200: #e2e8f0;
     --gray-400: #94a3b8;
     --white: #fff;
+    --light-purple: #9f67ef;
 }
+
+
 header {
-    background-image: url(bg-deskotp.png);
+    background-image: url(./imagens/bg\ mobile.png);
     background-size: cover;
     height: 8.375rem;
     display: flex;
@@ -86,8 +89,15 @@ main {
     font-size: 1rem;
     font-weight: 700;
     color: var(--white);
-    
+
 }
+
+.login button:hover {
+    background: var(--light-purple);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .login > p{
     color: var(--gray-600);
 }
@@ -105,27 +115,40 @@ main {
     header {
         background: none;
         justify-content: flex-start;
-        padding-inline: 7rem;
         margin: 2.5rem 7rem 7rem;
         height: fit-content;
+
     }
 
     header img{
         width: 10rem;
     }
 
+
+
     main {
-        padding-inline: 7rem;
         margin-inline: 7rem;
         max-width: 24rem;
         padding: 0;
     }
-
     .bg-desktop {
         display: block;
         width: 100%;
     }
     .conteudo {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .descricao h1 {
+        font-size: 2.25rem;
+    }
+
+    .descricao p {
+        font-size: 1rem;
+    }
+
 }
+
